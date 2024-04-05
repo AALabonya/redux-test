@@ -13,9 +13,12 @@ reducers:{
     },
     decrement:(state)=>{
         state.count =state.count - 1
+    },
+    incrementByPayload:(state, actions)=>{
+        state.count = state.count +actions.payload
     }
 },
 })
 
-export const {increment, decrement} =counterSlice.actions;
+export const {increment, decrement,incrementByPayload} =counterSlice.actions;
 export default counterSlice.reducer
