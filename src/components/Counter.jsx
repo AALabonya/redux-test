@@ -1,7 +1,14 @@
 
 const Counter = () => {
   return (
-    <div>Counter</div>
+    <div>
+        <button>increment</button>
+        <div>
+            <h1>0</h1>
+        </div>
+        <button>decrement</button>
+
+    </div>
   )
 }
 
